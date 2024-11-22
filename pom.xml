@@ -19,8 +19,9 @@
     <module>microservice.gateway</module>
     <module>microservice.eureka</module>
     <module>microservice.config</module>
-    <module>microservice.user</module>
-    <module>microservice.service</module>
+    <module>microservice.comment</module>
+    <module>microservice.main</module>
+    <module>customer</module>
   </modules>
 
   <properties>

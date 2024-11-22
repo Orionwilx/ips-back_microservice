@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: msvc-gateway
+  config:
+    import: optional:configserver:http://localhots:8888
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: main
+          url: http://localhost:9090
+          predicate:
+            - Path=/api/**
+        - id: comment
+          url: http://localhost:9080
+          predicate:
+            - Path=/api/**

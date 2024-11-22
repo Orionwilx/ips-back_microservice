@@ -8,19 +8,31 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservice.eureka" />
         <module name="microservice.config" />
-        <module name="microservice.user" />
-        <module name="microservice.service" />
+        <module name="PawPetCare" />
+        <module name="comment" />
         <module name="microservice.gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Comment" target="17" />
+      <module name="comment (2) (com.microservise.services)" target="17" />
+      <module name="customer" target="21" />
+      <module name="microservice.costumer" target="17" />
+      <module name="microservice.dd" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Comment" options="-parameters" />
+      <module name="PawPetCare" options="-parameters" />
+      <module name="comment" options="-parameters" />
+      <module name="comment (2) (com.microservise.services)" options="-parameters" />
+      <module name="customer" options="-parameters" />
       <module name="microservice.config" options="-parameters" />
+      <module name="microservice.costumer" options="-parameters" />
+      <module name="microservice.dd" options="-parameters" />
       <module name="microservice.eureka" options="-parameters" />
       <module name="microservice.gateway" options="-parameters" />
-      <module name="microservice.service" options="-parameters" />
-      <module name="microservice.user" options="-parameters" />
     </option>
   </component>
 </project>
